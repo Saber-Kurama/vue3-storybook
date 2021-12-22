@@ -1,15 +1,13 @@
 /*
  * @Author: saber
- * @Date: 2021-12-22 20:15:32
- * @LastEditTime: 2021-12-22 20:17:03
+ * @Date: 2021-12-22 20:19:01
+ * @LastEditTime: 2021-12-22 20:38:51
  * @LastEditors: saber
  * @Description: 
  */
-import MyButton from './Button.vue';
-
-// More on default export: https://storybook.js.org/docs/vue/writing-stories/introduction#default-export
+import MyButton from './Button1.vue';
 export default {
-  title: 'components/Button1',
+  title: 'components/Button333s',
   component: MyButton,
   // More on argTypes: https://storybook.js.org/docs/vue/api/argtypes
   argTypes: {
@@ -22,7 +20,6 @@ export default {
   },
 };
 
-// More on component templates: https://storybook.js.org/docs/vue/writing-stories/introduction#using-args
 const Template = (args) => ({
   // Components used in your story `template` are defined in the `components` object
   components: { MyButton },
@@ -38,22 +35,5 @@ export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/vue/writing-stories/args
 Primary.args = {
   primary: true,
-  label: 'Button',
-};
-
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: 'Button',
-};
-
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
-  label: 'Button',
-};
-
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
   label: 'Button',
 };
